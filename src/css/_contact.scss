@@ -1,0 +1,114 @@
+
+.inTouch{
+
+    width: 85%;
+    margin: auto;
+    padding-bottom: 10%;
+
+    h1{
+        color: $color2;
+        font-family: $main-font;
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    .fix{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .short{
+        background-color: lighten($color3, 40%);
+        border: none;
+        width: 45%;
+        height: 60px;
+        padding: 10px;
+        font-family: $main-font;
+    }
+    .big{
+        background-color: lighten($color3, 40%);
+        border: none;
+        margin: 10px;
+        width: 80%;
+        height: 200px;
+        text-align: center;
+        font-family: $main-font;
+    }
+
+    ::placeholder{
+        padding: 10px;
+        font-family: $main-font;
+        
+    }
+
+    .enviar{
+        background-color: $color2;
+        font-family: Sanchez, 'serif';
+        color: white;
+        font-size: 0.8em;
+        border: none;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        margin: auto;
+        position: relative;
+    }
+
+    .enviar:disabled {
+        opacity: 0.3;
+    }
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 80px;
+        font-size: 0.8em;
+        background-color: $color2;
+        color:$color;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        left: 50%;
+    }
+
+    .msj:hover .tooltiptext {
+        visibility: visible;
+    }
+}
+}
+
+@media (max-width: 800px) {
+
+    .inTouch{
+    
+        form{
+    
+        .short{
+            width: 40%;
+            height: 40px; 
+        }
+        
+    }
+    }
+}
+@media (max-width: 450px) {
+
+    .inTouch{
+    
+        form{
+    
+        .short{
+            width: 40%;
+            height: 20px; 
+        }
+        
+        }
+    }
+}

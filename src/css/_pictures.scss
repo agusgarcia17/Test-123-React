@@ -1,0 +1,129 @@
+.pictures {
+    padding: 5%;
+
+    .galeria{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        figure{
+            position: relative;
+
+            .pic{
+            height: 300px;
+            width: 400px;
+            opacity: 0.6;
+            }
+
+
+            figcaption{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                -webkit-box-shadow: 0px -10px 0px 0px darken( $color2, 20%);
+                -moz-box-shadow: 0px -10px 0px 0px darken( $color2, 20%);
+                box-shadow: 0px -10px 0px 0px darken( $color2, 20%);
+                background: $color2;
+                color: darken( $color2, 20%);
+                visibility: hidden;
+                font-family: $main-font;
+                padding: 15px;
+                font-size: 0.8;
+
+                span{
+                    color: $color;
+                    font-size: 1em;
+                }
+            }
+            
+            .lupa{
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            visibility: hidden;
+            margin: 10px;
+            }
+
+
+    }
+
+        figure:hover {
+            figcaption, .lupa, .pic {
+            visibility: visible;
+            opacity: 1;
+            }
+
+    }
+    }
+
+    .more{
+        background-color: $color2;
+        font-family: Sanchez, 'serif';
+        color: white;
+        font-size: 1.5em;
+        border: none;
+        padding: 10px 50px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 800px) {
+.pictures {
+
+    padding: 5%;
+
+    .galeria{
+
+        figure{
+            position: relative;
+
+            .pic{
+            height: 200px;
+            width: 250px;
+            }
+
+
+            figcaption{
+                padding: 15px;
+                font-size: 0.8em;
+
+                span{
+                    font-size: 1em;
+                }
+            }
+            
+            .lupa{
+            height: 40px;
+            width: 40px;
+            }
+
+
+        }
+    }
+    .more{
+        font-size: 1.3em;
+    }
+}
+}
+
+
+@media (max-width: 450px) {
+    .pictures {
+        .more{
+            font-size: 1em;
+            width: 150px;
+        }
+    }
+    
+}

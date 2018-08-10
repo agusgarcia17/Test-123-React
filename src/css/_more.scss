@@ -1,0 +1,21 @@
+.mensaje{
+
+    height: 200px;
+    
+    
+    h1, a{
+        font-family: $main-font;
+        color:$color2;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    .dog{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        height: auto;
+    }
+}
